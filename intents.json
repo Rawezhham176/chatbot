@@ -31,6 +31,23 @@
       "bye :)",
       "nice to know you"
     ]
+  },
+  {
+    "tag": "request for help",
+    "patterns": [
+      "can you help me?",
+      "I need help",
+      "I got a problem",
+      "I have a problem",
+      "I've got a problem"
+    ],
+    "response": [
+      "How may I help you?",
+      "How can I help you?",
+      "What can I help you with?",
+      "What seems to be the problem?",
+      "Tell me what you need support with?"
+    ]
   }
     ]
 }
