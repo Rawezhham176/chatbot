@@ -46,7 +46,32 @@
       "How can I help you?",
       "What can I help you with?",
       "What seems to be the problem?",
-      "Tell me what you need support with"
+      "Tell me what you need support with?",
+      {
+        "tag": "sales",
+        "patterns": [
+          "I'm looking for a cloud provider?",
+          "How much is your cloud service?",
+          "Where can I buy your cloud service?"
+        ],
+        "response": [
+          "You can find our offers at: www.website.com/offers",
+          "All our prices are listed at: www.website.com/offers"
+        ]
+      },
+      {
+        "tag": "log-in problems",
+        "patterns": [
+          "I can't log into my account",
+          "My log-in doesn't work",
+          "My log-in does not work",
+          "My password doesn't work",
+          "My password does not work"
+        ],
+        "response": [
+          "You can reset your password via: www.website.com/pwreset"
+        ]
+      }
     ]
   }
     ]
