@@ -3,7 +3,13 @@ from chat import get_responses
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+
+api_v1_cors_config = {
+    "origins": ["http://localhost:5000"]
+}
+app.config.from_object(__name__)
+
+CORS(app, resources={r'/*': {'origins': '*'}})
 
 
 @app.get('/')
@@ -13,6 +19,7 @@ def index_get():
 
 @app.post('/predict')
 def predict():
+    print("hi")
     text = request.get_json().get("message")
     # Test error with try and catch
     response = get_responses(text)
