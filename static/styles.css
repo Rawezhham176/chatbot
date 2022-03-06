@@ -53,6 +53,12 @@ body {
     display: flex;
     overflow-y: scroll;
     flex-direction: column-reverse;
+    -ms-overflow-style: none;
+    scrollbar-width: 0;
+}
+
+.chatbox__messages::-webkit-scrollbar {
+    display: none;
 }
 
 .messages__item {
